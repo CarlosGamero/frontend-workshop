@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container} from './styles'
-import TooltipComponent from './Components/TooltipComponent'
+import TooltipComponent from './Components/TooltipComponent/TooltipComponent'
 
 const Home = () => {
   return (
