@@ -14,3 +14,7 @@ export const Heading2 = styled.h2`
   ${typography('heading2')}
   margin-bottom: ${spacing(5)};
 `
+
+export const TabContainer = styled.div`
+  margin: 30px 15px;
+`

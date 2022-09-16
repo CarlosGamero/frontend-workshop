@@ -1,8 +1,9 @@
 import React from 'react';
 import {Tabs, TabList, Tab, TabPanels, TabPanel} from '@lokalise/louis';
-import {Container} from './styles'
+import {Container, TabContainer} from './styles'
 import TooltipComponent from './Components/TooltipComponent/TooltipComponent'
 import Hobbies from './Components/Hobbys/Hobbies'
+import FormComponent from './Components/FormComponent/FormComponent'
 
 const Home = () => {
   return (
@@ -15,13 +16,19 @@ const Home = () => {
             </TabList>
             <TabPanels>
                 <TabPanel>
-                    <TooltipComponent/>
+                    <TabContainer>
+                        <TooltipComponent/>
+                    </TabContainer>
                 </TabPanel>
                 <TabPanel>
-                    <Hobbies/>
+                    <TabContainer>
+                        <Hobbies/>
+                    </TabContainer>
                 </TabPanel>
                 <TabPanel>
-                    TODO
+                    <TabContainer>
+                        <FormComponent/>
+                    </TabContainer>
                 </TabPanel>
             </TabPanels>
         </Tabs>
