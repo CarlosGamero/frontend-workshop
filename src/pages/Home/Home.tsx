@@ -4,6 +4,7 @@ import {Container, TabContainer} from './styles'
 import TooltipComponent from '../../components/TooltipComponent/TooltipComponent'
 import Hobbies from '../../components/Hobbys/Hobbies'
 import FormComponent from '../../components/FormComponent/FormComponent'
+import TaskPage from "../TaskPage/TaskPage";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
                 <Tab>Task 1</Tab>
                 <Tab>Task 2</Tab>
                 <Tab>Task 3</Tab>
+                <Tab>Tasks page</Tab>
             </TabList>
             <TabPanels>
                 <TabPanel>
@@ -28,6 +30,11 @@ const Home = () => {
                 <TabPanel>
                     <TabContainer>
                         <FormComponent/>
+                    </TabContainer>
+                </TabPanel>
+                <TabPanel>
+                    <TabContainer>
+                        <TaskPage/>
                     </TabContainer>
                 </TabPanel>
             </TabPanels>
