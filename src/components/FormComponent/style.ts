@@ -7,6 +7,3 @@ export const FormTitle = styled.h2`
   font-size: large;
 `;
 
-export const LabelContainer = styled.div`
-  margin-top: 10px;
-`

@@ -5,7 +5,7 @@ import { Input } from "@lokalise/louis";
 import { Textarea } from '@lokalise/louis';
 import { Button } from '@lokalise/louis';
 import { ToastContainer, showToast } from '@lokalise/louis';
-import {FormTitle, LabelContainer} from "./style";
+import {FormTitle } from "./style";
 
 
 
@@ -58,15 +58,14 @@ class FormComponent extends React.Component<{}, FormState> {
     }
 
     render() {
-        console.log(this.state);
         return (
             <div>
                 <ToastContainer/>
-                <Flex justify={"center"}>
+                <Flex justify={"center"} style={{marginBottom: 20}}>
                     <FormTitle>My first form</FormTitle>
                 </Flex>
 
-                <LabelContainer>
+                <Flex direction={"column"} gap={2}>
                     <Label required text="Full name">
                         <Input
                             error={this.state.nameError ? this.state.nameError : false}
@@ -75,8 +74,6 @@ class FormComponent extends React.Component<{}, FormState> {
                             value={this.state.name}
                         />
                     </Label>
-                </LabelContainer>
-                <LabelContainer>
                     <Label required text="Description" >
                         <Textarea
                             error={this.state.descriptionError ? this.state.descriptionError : false}
@@ -85,7 +82,7 @@ class FormComponent extends React.Component<{}, FormState> {
                             value={this.state.description}
                         />
                     </Label>
-                </LabelContainer>
+                </Flex>
 
                 <Flex justify={"center"} style={{marginTop: 20}}>
                     <Button
