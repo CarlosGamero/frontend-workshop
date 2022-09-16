@@ -1,9 +1,9 @@
 import React from 'react';
 import {Tabs, TabList, Tab, TabPanels, TabPanel} from '@lokalise/louis';
 import {Container, TabContainer} from './styles'
-import TooltipComponent from './Components/TooltipComponent/TooltipComponent'
-import Hobbies from './Components/Hobbys/Hobbies'
-import FormComponent from './Components/FormComponent/FormComponent'
+import TooltipComponent from '../../components/TooltipComponent/TooltipComponent'
+import Hobbies from '../../components/Hobbys/Hobbies'
+import FormComponent from '../../components/FormComponent/FormComponent'
 
 const Home = () => {
   return (
