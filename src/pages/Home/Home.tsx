@@ -3,7 +3,8 @@ import {Tabs, TabList, Tab, TabPanels, TabPanel} from '@lokalise/louis';
 import {Container, TabContainer} from './styles'
 import TooltipComponent from '../../components/TooltipComponent/TooltipComponent'
 import Hobbies from '../../components/Hobbys/Hobbies'
-import FormComponent from '../../components/FormComponent/FormComponent'
+import FormComponentOOP from '../../components/FormComponent/OOP/FormComponent'
+import FormComponentFunctional from '../../components/FormComponent/Functional/FormComponent'
 import TaskPage from "../TaskPage/TaskPage";
 
 const Home = () => {
@@ -13,8 +14,10 @@ const Home = () => {
             <TabList>
                 <Tab>Task 1</Tab>
                 <Tab>Task 2</Tab>
-                <Tab>Task 3</Tab>
-                <Tab>Tasks page</Tab>
+                <Tab>Task 3 - OOP</Tab>
+                <Tab>Task 3 - Functional</Tab>
+                <Tab>Tasks page - OOP</Tab>
+                <Tab>Tasks page - Functional</Tab>
             </TabList>
             <TabPanels>
                 <TabPanel>
@@ -29,12 +32,21 @@ const Home = () => {
                 </TabPanel>
                 <TabPanel>
                     <TabContainer>
-                        <FormComponent/>
+                        <FormComponentOOP/>
+                    </TabContainer>
+                </TabPanel>
+                <TabPanel>
+                    <TabContainer>
+                        <FormComponentFunctional/>
                     </TabContainer>
                 </TabPanel>
                 <TabPanel>
                     <TabContainer>
                         <TaskPage/>
+                    </TabContainer>
+                </TabPanel>
+                <TabPanel>
+                    <TabContainer>
                     </TabContainer>
                 </TabPanel>
             </TabPanels>

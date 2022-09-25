@@ -1,21 +1,10 @@
 
 import React from 'react';
-import {Flex, Label} from "@lokalise/louis";
-import { Input } from "@lokalise/louis";
-import { Textarea } from '@lokalise/louis';
-import { Button } from '@lokalise/louis';
-import { ToastContainer, showToast } from '@lokalise/louis';
-import {FormTitle } from "./style";
+import {Flex, Label, Input, Textarea, Button, ToastContainer, showToast} from "@lokalise/louis";
+import {FormTitle } from "../style";
+import FormState from "../FormState";
 
 
-
-
-interface FormState {
-    name: string;
-    description: string;
-    nameError?: string;
-    descriptionError?: string;
-}
 
 class FormComponent extends React.Component<{}, FormState> {
 
@@ -44,7 +33,7 @@ class FormComponent extends React.Component<{}, FormState> {
 
     private sendForm(): void{
         let err = false;
-        if (this.state.name.length && this.state.description.length) {
+        if (!this.state.name.length || !this.state.description.length) {
             err = true;
             this.setName(this.state.name);
             this.setDescription(this.state.description);
