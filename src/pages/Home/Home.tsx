@@ -5,7 +5,8 @@ import TooltipComponent from '../../components/TooltipComponent/TooltipComponent
 import Hobbies from '../../components/Hobbys/Hobbies'
 import FormComponentOOP from '../../components/FormComponent/OOP/FormComponent'
 import FormComponentFunctional from '../../components/FormComponent/Functional/FormComponent'
-import TaskPage from "../TaskPage/TaskPage";
+import TaskPageOOP from "../TaskPage/OOP/TaskPage";
+import TaskPageFunctional from "../TaskPage/Functional/TaskPage";
 
 const Home = () => {
   return (
@@ -42,11 +43,12 @@ const Home = () => {
                 </TabPanel>
                 <TabPanel>
                     <TabContainer>
-                        <TaskPage/>
+                        <TaskPageOOP/>
                     </TabContainer>
                 </TabPanel>
                 <TabPanel>
                     <TabContainer>
+                        <TaskPageFunctional/>
                     </TabContainer>
                 </TabPanel>
             </TabPanels>

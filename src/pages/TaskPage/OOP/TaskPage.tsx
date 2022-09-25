@@ -1,13 +1,10 @@
-import React, {FormEvent} from "react";
-import TaskComponent from "../../components/TaskComponent/TaskComponent";
-import Task from "../../Models/Task";
+import React from "react";
+import TaskComponent from "../../../components/TaskComponent/OOP/TaskComponent";
+import Task from "../../../Models/Task";
 import {AddIcon, Button, Flex, Input, Label} from '@lokalise/louis';
+import TaskPageState from "../TaskPageState";
 
 
-interface TaskPageState {
-    tasks: Task[],
-    newTask?: Task
-}
 
 export default class TaskPage extends React.Component<any, TaskPageState>{
 

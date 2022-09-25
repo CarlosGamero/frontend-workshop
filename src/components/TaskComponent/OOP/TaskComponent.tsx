@@ -1,12 +1,10 @@
 import React, {CSSProperties} from "react";
 import {Flex} from "@lokalise/louis";
-import Task from "../../Models/Task";
-import {TaskTitle} from "./style";
+import Task from "../../../Models/Task";
+import {TaskTitle} from "../style";
+import TaskComponentProps from "../TaskComponentProps";
 
 
-interface TaskComponentProps{
-    task: Task
-}
 
 export default class TaskComponent extends React.Component<TaskComponentProps>{
 
